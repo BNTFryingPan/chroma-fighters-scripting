@@ -1,0 +1,3 @@
+--class-path ./
+--js bin/test.js
+--main Main
