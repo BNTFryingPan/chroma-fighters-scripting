@@ -1,9 +1,8 @@
 package scripting;
 
-import flixel.util.typeLimit.OneOfThree;
 import scripting.Op.Operation;
 
-typedef PosHolder = OneOfThree<Token, Node, Int>;
+typedef PosHolder = Either<Token, Either<Node, Int>>;
 
 /**
    the builder takes a list of tokens and builds them into nodes that will later be compiled into actions
